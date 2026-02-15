@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiang Mai Running Races 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --surface-hover: #222;
+            --border: #2a2a2a;
+            --text: #e8e4de;
+            --text-dim: #8a8580;
+            --accent: #e85d2c;
+            --accent-glow: #ff6b35;
+            --green: #4ecb71;
+            --gold: #d4a847;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Grain overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            padding: 80px 40px 60px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -60%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(232, 93, 44, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 32px;
+            animation: fadeDown 0.8s ease both;
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pulse 2s infinite;
+        }
+
+        .hero h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(3rem, 8vw, 6.5rem);
+            font-weight: 400;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+            animation: fadeDown 0.8s ease 0.1s both;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero-sub {
+            font-size: 17px;
+            color: var(--text-dim);
+            max-width: 520px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            animation: fadeDown 0.8s ease 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            animation: fadeDown 0.8s ease 0.3s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat .num {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+
+        .hero-stat .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+
+        /* Filter bar */
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 40px 48px;
+            flex-wrap: wrap;
+            animation: fadeDown 0.8s ease 0.4s both;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            color: var(--text-dim);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        /* Grid */
+        .grid-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px 100px;
+        }
+
+        .month-label {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-dim);
+        }
+
+        .month-label span {
+            color: var(--text);
+        }
+
+        .month-group {
+            margin-bottom: 56px;
+        }
+
+        .race-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+        }
+
+        .race-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .race-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .race-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(232, 93, 44, 0.1);
+        }
+
+        .race-card .img-wrap {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .race-card .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .race-card:hover .img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .race-card .date-chip {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(15, 15, 15, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 8px 12px;
+            text-align: center;
+            min-width: 56px;
+        }
+
+        .date-chip .day {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.4rem;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .date-chip .mon {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-top: 2px;
+        }
+
+        .race-card .status-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 4px 10px;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-badge.upcoming {
+            background: rgba(78, 203, 113, 0.15);
+            color: var(--green);
+            border: 1px solid rgba(78, 203, 113, 0.3);
+        }
+
+        .status-badge.past {
+            background: rgba(138, 133, 128, 0.15);
+            color: var(--text-dim);
+            border: 1px solid rgba(138, 133, 128, 0.3);
+        }
+
+        .race-card .content {
+            padding: 20px;
+        }
+
+        .race-card h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .race-card .meta {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .race-card .meta-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-dim);
+            line-height: 1.4;
+        }
+
+        .meta-row svg {
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .race-card .cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 16px;
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-dim);
+            transition: all 0.25s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .race-card:hover .cta {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid var(--border);
+            color: var(--text-dim);
+            font-size: 13px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* No results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-dim);
+            font-size: 16px;
+            display: none;
+        }
+
+        /* Animations */
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 60px 20px 40px; }
+            .hero-stats { gap: 28px; }
+            .grid-section { padding: 0 16px 60px; }
+            .race-grid { grid-template-columns: 1fr; }
+            .filter-bar { padding: 0 16px 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-badge">
+        <span class="dot"></span>
+        <span>Data sourced from Runlah.com</span>
+    </div>
+    <h1>Chiang Mai<br><em>Running Races</em></h1>
+    <p class="hero-sub">All upcoming and recent running events in Chiang Mai province, Thailand — sourced from Runlah.com</p>
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <div class="num" id="total-count">12</div>
+            <div class="label">Total Races</div>
+        </div>
+        <div class="hero-stat">
+            <div class="num" id="upcoming-count">0</div>
+            <div class="label">Upcoming</div>
+        </div>
+        <div class="hero-stat">
+            <div class="num" id="month-count">0</div>
+            <div class="label">Months Covered</div>
+        </div>
+    </div>
+</div>
+
+<div class="filter-bar" id="filters">
+    <button class="filter-btn active" data-filter="all">All Races</button>
+    <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+    <button class="filter-btn" data-filter="past">Past</button>
+</div>
+
+<div class="grid-section" id="grid-section">
+    <!-- Races injected by JS -->
+</div>
+
+<div class="no-results" id="no-results">
+    No races match your current filter.
+</div>
+
+<footer>
+    All event data sourced from <a href="https://www.runlah.com/en/calendar/location?province=Chiang+Mai" target="_blank" rel="noopener">Runlah.com</a> — Chiang Mai Province.
+    <br>Last updated: February 2026.
+</footer>
+
+<script>
+const races = [
+    {
+        name: "Run Better Together 2026 — แม่อายวิทยาคม ก้าวด้วยใจ ก้าวไปด้วยกัน",
+        date: "2026-02-14",
+        dateDisplay: "February 14, 2026",
+        location: "สนามโรงเรียนแม่อายวิทยาคม ต.แม่อาย อ.แม่อาย, Chiang Mai",
+        image: "https://www.runlah.com/images/event/i8GRvNUe/bn_bk-th.webp?size=md",
+        url: "https://www.runlah.com/en/i8GRvNUe"
+    },
+    {
+        name: "Samoeng Mini Marathon ครั้งที่ 6",
+        date: "2026-02-14",
+        dateDisplay: "February 14, 2026",
+        location: "Samoeng Pittayakhom School, Chiang Mai",
+        image: "https://www.runlah.com/images/event/uT51f1K4/bn_q9-th.webp?size=md",
+        url: "https://www.runlah.com/en/uT51f1K4"
+    },
+    {
+        name: "Sannameng Healthy Hero 2026",
+        date: "2026-02-14",
+        dateDisplay: "February 14, 2026",
+        location: "San Na Meng Subdistrict Office, Chiang Mai",
+        image: "https://www.runlah.com/images/event/62CopI1k/bn_ga-th.webp?size=md",
+        url: "https://www.runlah.com/en/62CopI1k"
+    },
+    {
+        name: "CMU ATHLETIC EKIDEN RUN 2026",
+        date: "2026-02-15",
+        dateDisplay: "February 15, 2026",
+        location: "ลานเนินพระพุทธศูนย์วิจัย สาธิตและฝึกอบรมการเกษตรแม่เหียะ (ไร่แม่เหียะ), Chiang Mai",
+        image: "https://www.runlah.com/images/event/N4hXVh1W/bn_vq-th.webp?size=md",
+        url: "https://www.runlah.com/en/N4hXVh1W"
+    },
+    {
+        name: "Mae Kampong Mini Cross Country 2026",
+        date: "2026-02-15",
+        dateDisplay: "February 15, 2026",
+        location: "Mae Kampong, Chiang Mai",
+        image: "https://www.runlah.com/images/event/eINad7dE/bn_qq-th.webp?size=md",
+        url: "https://www.runlah.com/en/eINad7dE"
+    },
+    {
+        name: "Saraphi Mini Marathon #6",
+        date: "2026-02-15",
+        dateDisplay: "February 15, 2026",
+        location: "Saraphi Municipality Office, Chiang Mai",
+        image: "https://www.runlah.com/images/event/gXwIpyTn/bn_44-th.webp?size=md",
+        url: "https://www.runlah.com/en/gXwIpyTn"
+    },
+    {
+        name: "Walk & Run HOM HUG #6",
+        date: "2026-02-15",
+        dateDisplay: "February 15, 2026",
+        location: "Omkoi Community School, Chiang Mai",
+        image: "https://www.runlah.com/images/event/PuORlkGp/bn_ga-th.webp?size=md",
+        url: "https://www.runlah.com/en/PuORlkGp"
+    },
+    {
+        name: "เดิน-วิ่ง \"วิถีล้านนา\" เที่ยวชมเมืองเชียงใหม่",
+        date: "2026-02-21",
+        dateDisplay: "February 21, 2026",
+        location: "ข่วงประตูท่าแพ (Tha Phae Gate), Chiang Mai",
+        image: "https://www.runlah.com/images/event/AuatYBHd/bn_BR-th.webp?size=md",
+        url: "https://www.runlah.com/en/AuatYBHd"
+    },
+    {
+        name: "วังหลวง มินิมาราธอน ครั้งที่ 2",
+        date: "2026-03-01",
+        dateDisplay: "March 1, 2026",
+        location: "Ban Wang Luang School, Doi Tao, Chiang Mai",
+        image: "https://www.runlah.com/images/event/apMlTrrI/bn_S6-th.webp?size=md",
+        url: "https://www.runlah.com/en/apMlTrrI"
+    },
+    {
+        name: "Doisuthep Run 2026",
+        date: "2026-04-26",
+        dateDisplay: "April 26, 2026",
+        location: "Kruba Srivichai Monument, Chiang Mai",
+        image: "https://www.runlah.com/images/event/s1A1pfbg/bn_GI-th.webp?size=md",
+        url: "https://www.runlah.com/en/s1A1pfbg"
+    },
+    {
+        name: "Chiang Mai Half Marathon 2026",
+        date: "2026-07-05",
+        dateDisplay: "July 5, 2026",
+        location: "กองพลทหารราบที่ 7 อ.แม่ริม, Chiang Mai",
+        image: "https://www.runlah.com/images/event/eF2t2Iut/bn_Zm-th.webp?size=md",
+        url: "https://www.runlah.com/en/eF2t2Iut"
+    },
+    {
+        name: "THEP SADET TRAIL 2026",
+        date: "2026-11-01",
+        dateDisplay: "November 1, 2026",
+        location: "อบต.เทพเสด็จ ต.เทพเสด็จ อ.ดอยสะเก็ด, Chiang Mai",
+        image: "https://www.runlah.com/images/event/eYQj8Vza/bn_l7-th.webp?size=md",
+        url: "https://www.runlah.com/en/eYQj8Vza"
+    }
+];
+
+const today = new Date().toISOString().split('T')[0];
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+// Count stats
+const upcoming = races.filter(r => r.date >= today);
+const uniqueMonths = new Set(races.map(r => r.date.substring(0, 7)));
+document.getElementById('upcoming-count').textContent = upcoming.length;
+document.getElementById('month-count').textContent = uniqueMonths.size;
+
+function parseDate(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
+    return { day: d.getDate(), month: months[d.getMonth()].substring(0, 3).toUpperCase(), year: d.getFullYear() };
+}
+
+function groupByMonth(list) {
+    const groups = {};
+    list.forEach(r => {
+        const key = r.date.substring(0, 7);
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(r);
+    });
+    return groups;
+}
+
+function renderCard(race) {
+    const d = parseDate(race.date);
+    const isUpcoming = race.date >= today;
+    return `
+        <a class="race-card" href="${race.url}" target="_blank" rel="noopener" data-status="${isUpcoming ? 'upcoming' : 'past'}">
+            <div class="img-wrap">
+                <img src="${race.image}" alt="${race.name}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22640%22 height=%22360%22%3E%3Crect fill=%22%231a1a1a%22 width=%22640%22 height=%22360%22/%3E%3Ctext fill=%22%23555%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2220%22%3ENo Image%3C/text%3E%3C/svg%3E'" />
+                <div class="date-chip">
+                    <div class="day">${d.day}</div>
+                    <div class="mon">${d.month}</div>
+                </div>
+                <span class="status-badge ${isUpcoming ? 'upcoming' : 'past'}">${isUpcoming ? 'Upcoming' : 'Past'}</span>
+            </div>
+            <div class="content">
+                <h3>${race.name}</h3>
+                <div class="meta">
+                    <div class="meta-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>${race.dateDisplay}</span>
+                    </div>
+                    <div class="meta-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>${race.location}</span>
+                    </div>
+                </div>
+                <div class="cta">
+                    View on Runlah
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                </div>
+            </div>
+        </a>
+    `;
+}
+
+function render(filter) {
+    const section = document.getElementById('grid-section');
+    const noResults = document.getElementById('no-results');
+    let filtered = races;
+    if (filter === 'upcoming') filtered = races.filter(r => r.date >= today);
+    if (filter === 'past') filtered = races.filter(r => r.date < today);
+
+    if (filtered.length === 0) {
+        section.innerHTML = '';
+        noResults.style.display = 'block';
+        return;
+    }
+
+    noResults.style.display = 'none';
+    const groups = groupByMonth(filtered);
+    let html = '';
+
+    Object.keys(groups).sort().forEach(key => {
+        const [y, m] = key.split('-');
+        const monthName = months[parseInt(m) - 1];
+        html += `<div class="month-group">`;
+        html += `<div class="month-label"><span>${monthName}</span> ${y}</div>`;
+        html += `<div class="race-grid">`;
+        groups[key].forEach(r => { html += renderCard(r); });
+        html += `</div></div>`;
+    });
+
+    section.innerHTML = html;
+
+    // Staggered reveal
+    const cards = section.querySelectorAll('.race-card');
+    cards.forEach((card, i) => {
+        setTimeout(() => card.classList.add('visible'), 60 * i);
+    });
+}
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render(btn.dataset.filter);
+    });
+});
+
+// Initial render
+render('all');
+</script>
+
+</body>
+</html>
