@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T07:01:26Z",
+  "lastUpdated": "2026-03-25T06:59:51Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -8,6 +8,14 @@
       "image": "https://www.runlah.com/images/event/s1A1pfbg/bn_GI-th.webp?size=md",
       "date": "2026-04-26",
       "dateDisplay": "April 26, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Inthakhin Trail 2026",
+      "url": "https://www.runlah.com/en/eMqkDJHf",
+      "image": "https://www.runlah.com/images/event/eMqkDJHf/bn_Whh-th.webp?size=md",
+      "date": "2026-06-21",
+      "dateDisplay": "June 21, 2026",
       "location": "Chiang Mai"
     },
     {
