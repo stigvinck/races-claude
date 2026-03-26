@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T06:59:51Z",
+  "lastUpdated": "2026-03-26T07:05:14Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -24,6 +24,30 @@
       "image": "https://www.runlah.com/images/event/eF2t2Iut/bn_Zm-th.webp?size=md",
       "date": "2026-07-05",
       "dateDisplay": "July 5, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "BTC100 Bitcoin Ultra Trail 2026",
+      "url": "https://www.runlah.com/en/ShuBRtJq",
+      "image": "https://www.runlah.com/images/event/ShuBRtJq/bn_6TO-th.webp?size=md",
+      "date": "2026-09-25",
+      "dateDisplay": "25-27 September 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Bangkok Airways Chiang Mai Half Marathon 2026",
+      "url": "https://www.runlah.com/en/oni4JEsw",
+      "image": "",
+      "date": "2026-09-26",
+      "dateDisplay": "26-27 September 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Pong Yaeng Trail 2026",
+      "url": "https://www.runlah.com/en/yqLwJ1GI",
+      "image": "https://www.runlah.com/images/event/yqLwJ1GI/bn_TqL-th.webp?size=md",
+      "date": "2026-10-17",
+      "dateDisplay": "17-18 October 2026",
       "location": "Chiang Mai"
     },
     {
