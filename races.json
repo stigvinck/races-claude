@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T09:59:56Z",
+  "lastUpdated": "2026-05-26T09:50:50Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -11,11 +11,27 @@
       "location": "Chiang Mai"
     },
     {
+      "name": "ITPC SATIT CMU MINI MARATHON 2026",
+      "url": "https://www.runlah.com/en/dhz6hCvD",
+      "image": "https://www.runlah.com/images/event/dhz6hCvD/bn_eFq-th.webp?size=md",
+      "date": "2026-06-21",
+      "dateDisplay": "June 21, 2026",
+      "location": "Chiang Mai"
+    },
+    {
       "name": "Chiang Mai Half Marathon 2026",
       "url": "https://www.runlah.com/en/eF2t2Iut",
       "image": "https://www.runlah.com/images/event/eF2t2Iut/bn_Zm-th.webp?size=md",
       "date": "2026-07-05",
       "dateDisplay": "July 5, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "CHIANG MAI 22K NIGHT RUN 2026",
+      "url": "https://www.runlah.com/en/pCwSHHrF",
+      "image": "https://www.runlah.com/images/event/pCwSHHrF/bn_grH-th.webp?size=md",
+      "date": "2026-08-29",
+      "dateDisplay": "August 29, 2026",
       "location": "Chiang Mai"
     },
     {
