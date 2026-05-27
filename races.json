@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T09:50:50Z",
+  "lastUpdated": "2026-05-27T09:40:15Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -32,6 +32,22 @@
       "image": "https://www.runlah.com/images/event/pCwSHHrF/bn_grH-th.webp?size=md",
       "date": "2026-08-29",
       "dateDisplay": "August 29, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Until The Sundown 5",
+      "url": "https://www.runlah.com/en/0dZ29iWi",
+      "image": "https://www.runlah.com/images/event/0dZ29iWi/bn_Ruz-th.webp?size=md",
+      "date": "2026-09-05",
+      "dateDisplay": "September 5, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Mahidol Run 2026",
+      "url": "https://www.runlah.com/en/3TRMIMVk",
+      "image": "https://www.runlah.com/images/event/3TRMIMVk/bn_6lG-th.webp?size=md",
+      "date": "2026-09-13",
+      "dateDisplay": "September 13, 2026",
       "location": "Chiang Mai"
     },
     {
