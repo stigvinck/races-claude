@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T09:40:15Z",
+  "lastUpdated": "2026-05-28T09:56:53Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -67,11 +67,35 @@
       "location": "Chiang Mai"
     },
     {
+      "name": "The School of Promise Mini Marathon 8th",
+      "url": "https://www.runlah.com/en/EbuTj6Hb",
+      "image": "https://www.runlah.com/images/event/EbuTj6Hb/bn_cJh-th.webp?size=md",
+      "date": "2026-10-03",
+      "dateDisplay": "October 3, 2026",
+      "location": "Chiang Mai"
+    },
+    {
       "name": "Pong Yaeng Trail 2026",
       "url": "https://www.runlah.com/en/yqLwJ1GI",
       "image": "https://www.runlah.com/images/event/yqLwJ1GI/bn_TqL-th.webp?size=md",
       "date": "2026-10-17",
       "dateDisplay": "17-18 October 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Counterpain FIT RUN 2026",
+      "url": "https://www.runlah.com/en/cCl0rFCk",
+      "image": "https://www.runlah.com/images/event/cCl0rFCk/bn_iGJ-th.webp?size=md",
+      "date": "2026-10-31",
+      "dateDisplay": "October 31, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Run for Education Season 3",
+      "url": "https://www.runlah.com/en/CRBDl1MD",
+      "image": "https://www.runlah.com/images/event/CRBDl1MD/bn_GLj-th.webp?size=md",
+      "date": "2026-10-31",
+      "dateDisplay": "October 31, 2026",
       "location": "Chiang Mai"
     },
     {
