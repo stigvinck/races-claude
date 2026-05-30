@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29T09:49:30Z",
+  "lastUpdated": "2026-05-30T08:24:47Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -99,11 +99,35 @@
       "location": "Chiang Mai"
     },
     {
+      "name": "Scenic Half Marathon ChiangMai 2026",
+      "url": "https://www.runlah.com/en/l4hsLFV1",
+      "image": "https://www.runlah.com/images/event/l4hsLFV1/bn_sJF-th.webp?size=md",
+      "date": "2026-11-01",
+      "dateDisplay": "November 1, 2026",
+      "location": "Chiang Mai"
+    },
+    {
       "name": "THEP SADET TRAIL 2026",
       "url": "https://www.runlah.com/en/eYQj8Vza",
       "image": "https://www.runlah.com/images/event/eYQj8Vza/bn_l7-th.webp?size=md",
       "date": "2026-11-01",
       "dateDisplay": "November 1, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Trick or Treat Run 2026 Nightmare Miles",
+      "url": "https://www.runlah.com/en/IJR26Zfh",
+      "image": "https://www.runlah.com/images/event/IJR26Zfh/bn_QPn-th.webp?size=md",
+      "date": "2026-11-01",
+      "dateDisplay": "November 1, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "POCARI SWEAT TRAIL RUN THAILAND 2026",
+      "url": "https://www.runlah.com/en/MRajnd1g",
+      "image": "https://www.runlah.com/images/event/MRajnd1g/bn_XIl-th.webp?size=md",
+      "date": "2026-11-14",
+      "dateDisplay": "14-15 November 2026",
       "location": "Chiang Mai"
     }
   ]
