@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T08:24:47Z",
+  "lastUpdated": "2026-05-31T08:41:34Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -128,6 +128,38 @@
       "image": "https://www.runlah.com/images/event/MRajnd1g/bn_XIl-th.webp?size=md",
       "date": "2026-11-14",
       "dateDisplay": "14-15 November 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "VET CMU RUN 2026",
+      "url": "https://www.runlah.com/en/9QAGpZ4t",
+      "image": "https://www.runlah.com/images/event/9QAGpZ4t/bn_je4-th.webp?size=md",
+      "date": "2026-12-13",
+      "dateDisplay": "December 13, 2026",
+      "location": "Faculty of Veterinary Medicine, Chiang Mai University, Chiang Mai"
+    },
+    {
+      "name": "CHIANG DAO 100 Ultra-Trail 2026 Presented by DECATHLON",
+      "url": "https://www.runlah.com/en/w5mQVmha",
+      "image": "https://www.runlah.com/images/event/w5mQVmha/bn_MNP-th.webp?size=md",
+      "date": "2026-12-19",
+      "dateDisplay": "19-20 December 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Chiangmai Marathon 2026",
+      "url": "https://www.runlah.com/en/2qAli7DG",
+      "image": "https://www.runlah.com/images/event/2qAli7DG/bn_wcd-th.webp?size=md",
+      "date": "2026-12-20",
+      "dateDisplay": "December 20, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "CORE X250 Ultra Trail 2026",
+      "url": "https://www.runlah.com/en/ZyZjf8M3",
+      "image": "https://www.runlah.com/images/event/ZyZjf8M3/bn_KEB-th.webp?size=md",
+      "date": "2026-12-23",
+      "dateDisplay": "23-27 December 2026",
       "location": "Chiang Mai"
     }
   ]
