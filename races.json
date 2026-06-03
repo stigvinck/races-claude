@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T10:18:54Z",
+  "lastUpdated": "2026-06-03T10:53:56Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -134,9 +134,17 @@
       "name": "VET CMU RUN 2026",
       "url": "https://www.runlah.com/en/9QAGpZ4t",
       "image": "https://www.runlah.com/images/event/9QAGpZ4t/bn_je4-th.webp?size=md",
+      "date": "2026-12-06",
+      "dateDisplay": "December 6, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Phasamliam Trail 2026",
+      "url": "https://www.runlah.com/en/F2GaiW7x",
+      "image": "https://www.runlah.com/images/event/F2GaiW7x/bn_0jn-th.webp?size=md",
       "date": "2026-12-13",
       "dateDisplay": "December 13, 2026",
-      "location": "Faculty of Veterinary Medicine, Chiang Mai University, Chiang Mai"
+      "location": "Chiang Mai"
     },
     {
       "name": "CHIANG DAO 100 Ultra-Trail 2026 Presented by DECATHLON",
@@ -160,6 +168,14 @@
       "image": "https://www.runlah.com/images/event/ZyZjf8M3/bn_KEB-th.webp?size=md",
       "date": "2026-12-23",
       "dateDisplay": "23-27 December 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "UTCM Ultra Trail Chiang Mai 2027",
+      "url": "https://www.runlah.com/en/JARpQZAV",
+      "image": "https://www.runlah.com/images/event/JARpQZAV/bn_JCV-th.webp?size=md",
+      "date": "2027-01-08",
+      "dateDisplay": "8-10 January 2027",
       "location": "Chiang Mai"
     }
   ]
