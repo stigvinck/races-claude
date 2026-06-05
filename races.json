@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T09:52:13Z",
+  "lastUpdated": "2026-06-05T09:41:33Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -24,6 +24,14 @@
       "image": "https://www.runlah.com/images/event/eF2t2Iut/bn_Zm-th.webp?size=md",
       "date": "2026-07-05",
       "dateDisplay": "July 5, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "สันกำแพงมินิมาราธอน ครั้งที่ 7 ประจำปี 2569",
+      "url": "https://www.runlah.com/en/GbZgHzjV",
+      "image": "https://www.runlah.com/images/event/GbZgHzjV/bn_U61.webp?size=md",
+      "date": "2026-07-25",
+      "dateDisplay": "July 25, 2026",
       "location": "Chiang Mai"
     },
     {
