@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T08:30:21Z",
+  "lastUpdated": "2026-06-07T08:52:26Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -136,6 +136,14 @@
       "image": "https://www.runlah.com/images/event/MRajnd1g/bn_XIl-th.webp?size=md",
       "date": "2026-11-14",
       "dateDisplay": "14-15 November 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Geosocial MJU Half Marathon 2026",
+      "url": "https://www.runlah.com/en/x7PcEudV",
+      "image": "https://www.runlah.com/images/event/x7PcEudV/bn_aq9.webp?size=md",
+      "date": "2026-11-21",
+      "dateDisplay": "November 21, 2026",
       "location": "Chiang Mai"
     },
     {
