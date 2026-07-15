@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T07:58:21Z",
+  "lastUpdated": "2026-07-15T08:03:37Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -8,7 +8,7 @@
       "image": "https://www.runlah.com/images/event/GbZgHzjV/bn_U61.webp?size=md",
       "date": "2026-07-25",
       "dateDisplay": "July 25, 2026",
-      "location": "Running events in the  \"Chiang Mai\""
+      "location": "Running events in Chiang Mai, Thailand 2026"
     },
     {
       "name": "CHIANG MAI 22K NIGHT RUN 2026",
@@ -115,11 +115,35 @@
       "location": "Chiang Mai"
     },
     {
+      "name": "CMU Chiang Mai Marathon 2026",
+      "url": "https://www.runlah.com/en/vRCpDAef",
+      "image": "https://www.runlah.com/images/event/vRCpDAef/bn_TRh.webp?size=md",
+      "date": "2026-11-08",
+      "dateDisplay": "November 8, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Regina Coeli x Butterbear FUN RUN 2026",
+      "url": "https://www.runlah.com/en/1LliRCgg",
+      "image": "https://www.runlah.com/images/event/1LliRCgg/bn_IBh.webp?size=md",
+      "date": "2026-11-08",
+      "dateDisplay": "November 8, 2026",
+      "location": "Chiang Mai"
+    },
+    {
       "name": "POCARI SWEAT TRAIL RUN THAILAND 2026",
       "url": "https://www.runlah.com/en/MRajnd1g",
       "image": "https://www.runlah.com/images/event/MRajnd1g/bn_XIl-th.webp?size=md",
       "date": "2026-11-14",
       "dateDisplay": "14-15 November 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "PEA Chiangmai Mini Marathon ครั้งที่ 14 EMPOWER RUN",
+      "url": "https://www.runlah.com/en/wKE8Wr6v",
+      "image": "https://www.runlah.com/images/event/wKE8Wr6v/bn_lCj-th.webp?size=md",
+      "date": "2026-11-15",
+      "dateDisplay": "November 15, 2026",
       "location": "Chiang Mai"
     },
     {
