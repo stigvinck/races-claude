@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T08:30:13Z",
+  "lastUpdated": "2026-08-06T08:30:21Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -59,11 +59,27 @@
       "location": "Chiang Mai"
     },
     {
+      "name": "ChiangMai10K",
+      "url": "https://www.runlah.com/en/81N2fXUp",
+      "image": "https://www.runlah.com/images/event/81N2fXUp/bn_MFM-th.webp?size=md",
+      "date": "2026-10-04",
+      "dateDisplay": "October 4, 2026",
+      "location": "Chiang Mai"
+    },
+    {
       "name": "Pong Yaeng Trail 2026",
       "url": "https://www.runlah.com/en/yqLwJ1GI",
       "image": "https://www.runlah.com/images/event/yqLwJ1GI/bn_TqL-th.webp?size=md",
       "date": "2026-10-17",
       "dateDisplay": "17-18 October 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "CAA 2026 3rd Mini Marathon Charity Walk & Run",
+      "url": "https://www.runlah.com/en/eyWx2HNb",
+      "image": "https://www.runlah.com/images/event/eyWx2HNb/bn_jnM.webp?size=md",
+      "date": "2026-10-25",
+      "dateDisplay": "October 25, 2026",
       "location": "Chiang Mai"
     },
     {
@@ -83,20 +99,12 @@
       "location": "Chiang Mai"
     },
     {
-      "name": "Scenic Half Marathon ChiangMai 2026",
-      "url": "https://www.runlah.com/en/l4hsLFV1",
-      "image": "https://www.runlah.com/images/event/l4hsLFV1/bn_sJF-th.webp?size=md",
-      "date": "2026-11-01",
-      "dateDisplay": "November 1, 2026",
-      "location": "Chiang Mai"
-    },
-    {
       "name": "THEP SADET TRAIL 2026",
       "url": "https://www.runlah.com/en/eYQj8Vza",
       "image": "https://www.runlah.com/images/event/eYQj8Vza/bn_l7-th.webp?size=md",
       "date": "2026-11-01",
       "dateDisplay": "November 1, 2026",
-      "location": "Chiang Mai"
+      "location": "องค์การบริหารส่วนตำตลเทพเสด็จ ต.เทพเสด็จ อ.ดอยสะเก็ด, Chiang Mai"
     },
     {
       "name": "Trick or Treat Run 2026 Nightmare Miles",
