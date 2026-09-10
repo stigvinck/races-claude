@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T10:44:01Z",
+  "lastUpdated": "2026-09-10T10:34:06Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -64,6 +64,14 @@
       "image": "https://www.runlah.com/images/event/HuuoCC8K/bn_emz-th.webp?size=xs",
       "date": "2026-10-18",
       "dateDisplay": "October 18, 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "2nd Maetuen Mini-Half Marathon",
+      "url": "https://www.runlah.com/en/quj9eQPO",
+      "image": "https://www.runlah.com/images/event/quj9eQPO/bn_YIv-th.webp?size=xs",
+      "date": "2026-10-24",
+      "dateDisplay": "October 24, 2026",
       "location": "Chiang Mai"
     },
     {
