@@ -1,35 +1,27 @@
 {
-  "lastUpdated": "2026-09-29T12:05:37Z",
+  "lastUpdated": "2026-09-30T11:53:28Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
       "name": "For Organizers",
       "url": "https://www.runlah.com/en/organizer",
-      "image": "https://www.runlah.com/images/event/ShuBRtJq/bn_6TO-th.webp?size=md",
-      "date": "2026-09-25",
-      "dateDisplay": "25-27 September 2026",
+      "image": "https://www.runlah.com/images/event/K86mYmFp/bn_hqG.webp?size=md",
+      "date": "2026-10-03",
+      "dateDisplay": "3-4 October 2026",
       "location": "Running events in the  \"Chiang Mai\""
-    },
-    {
-      "name": "BTC100 Bitcoin Ultra Trail 2026",
-      "url": "https://www.runlah.com/en/ShuBRtJq",
-      "image": "https://www.runlah.com/images/event/ShuBRtJq/bn_6TO-th.webp?size=md",
-      "date": "2026-09-25",
-      "dateDisplay": "25-27 September 2026",
-      "location": "Chiang Mai"
-    },
-    {
-      "name": "Bangkok Airways Chiang Mai Half Marathon 2026",
-      "url": "https://www.runlah.com/en/oni4JEsw",
-      "image": "https://www.runlah.com/images/event/oni4JEsw/bn_LAy-th.webp?size=md",
-      "date": "2026-09-26",
-      "dateDisplay": "26-27 September 2026",
-      "location": "Chiang Mai"
     },
     {
       "name": "The School of Promise Mini Marathon 8th",
       "url": "https://www.runlah.com/en/EbuTj6Hb",
       "image": "https://www.runlah.com/images/event/EbuTj6Hb/bn_cJh-th.webp?size=md",
+      "date": "2026-10-03",
+      "dateDisplay": "3-4 October 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "ChiangMai10K",
+      "url": "https://www.runlah.com/en/81N2fXUp",
+      "image": "https://www.runlah.com/images/event/81N2fXUp/bn_MFM-th.webp?size=md",
       "date": "2026-10-17",
       "dateDisplay": "17-18 October 2026",
       "location": "Chiang Mai"
@@ -80,6 +72,14 @@
       "image": "https://www.runlah.com/images/event/2qAli7DG/bn_wcd-th.webp?size=md",
       "date": "2026-12-23",
       "dateDisplay": "23-27 December 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "AGRO MINI MARATHON 2026",
+      "url": "https://www.runlah.com/en/8dBqCk0W",
+      "image": "https://www.runlah.com/images/event/8dBqCk0W/bn_AkR.webp?size=md",
+      "date": "2027-01-08",
+      "dateDisplay": "8-10 January 2027",
       "location": "Chiang Mai"
     },
     {
