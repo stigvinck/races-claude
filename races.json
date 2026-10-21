@@ -1,30 +1,14 @@
 {
-  "lastUpdated": "2026-10-20T10:54:17Z",
+  "lastUpdated": "2026-10-21T11:07:34Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
       "name": "For Organizers",
       "url": "https://www.runlah.com/en/organizer",
-      "image": "https://www.runlah.com/images/event/yqLwJ1GI/bn_TqL-th.webp?size=md",
-      "date": "2026-10-17",
-      "dateDisplay": "17-18 October 2026",
-      "location": "Running events in the  \"Chiang Mai\""
-    },
-    {
-      "name": "Pong Yaeng Trail 2026",
-      "url": "https://www.runlah.com/en/yqLwJ1GI",
-      "image": "https://www.runlah.com/images/event/yqLwJ1GI/bn_TqL-th.webp?size=md",
-      "date": "2026-10-17",
-      "dateDisplay": "17-18 October 2026",
-      "location": "Chiang Mai"
-    },
-    {
-      "name": "RunLudTong 8",
-      "url": "https://www.runlah.com/en/HuuoCC8K",
-      "image": "https://www.runlah.com/images/event/HuuoCC8K/bn_emz-th.webp?size=md",
+      "image": "https://www.runlah.com/images/event/quj9eQPO/bn_YIv-th.webp?size=md",
       "date": "2026-11-14",
       "dateDisplay": "14-15 November 2026",
-      "location": "Chiang Mai"
+      "location": "Running events in the  \"Chiang Mai\""
     },
     {
       "name": "POCARI SWEAT TRAIL RUN THAILAND 2026",
@@ -38,6 +22,22 @@
       "name": "PEA Chiangmai Mini Marathon ครั้งที่ 14 EMPOWER RUN",
       "url": "https://www.runlah.com/en/wKE8Wr6v",
       "image": "https://www.runlah.com/images/event/wKE8Wr6v/bn_lCj-th.webp?size=md",
+      "date": "2026-12-11",
+      "dateDisplay": "11-13 December 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Mae Takhrai Trail",
+      "url": "https://www.runlah.com/en/uzrL7Eu1",
+      "image": "https://www.runlah.com/images/event/uzrL7Eu1/bn_AVk.webp?size=md",
+      "date": "2026-12-11",
+      "dateDisplay": "11-13 December 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Phasamliam Trail 2026",
+      "url": "https://www.runlah.com/en/F2GaiW7x",
+      "image": "https://www.runlah.com/images/event/F2GaiW7x/bn_0jn-th.webp?size=md",
       "date": "2026-12-19",
       "dateDisplay": "19-20 December 2026",
       "location": "Chiang Mai"
