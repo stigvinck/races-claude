@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T10:40:41Z",
+  "lastUpdated": "2026-10-26T12:13:27Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
@@ -70,6 +70,14 @@
       "name": "UTCM Ultra Trail Chiang Mai 2027",
       "url": "https://www.runlah.com/en/JARpQZAV",
       "image": "https://www.runlah.com/images/event/JARpQZAV/bn_JCV-th.webp?size=md",
+      "date": "2027-01-08",
+      "dateDisplay": "8-10 January 2027",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Tham Ngob Trail 2027",
+      "url": "https://www.runlah.com/en/tngt2027",
+      "image": "https://www.runlah.com/images/event/ceZHs/im_PdMpEl.webp?size=md",
       "date": "2027-01-08",
       "dateDisplay": "8-10 January 2027",
       "location": "Chiang Mai"
