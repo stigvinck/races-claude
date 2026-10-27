@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-10-26T12:13:27Z",
+  "lastUpdated": "2026-10-27T11:34:22Z",
   "source": "https://www.runlah.com/en/calendar/location?province=Chiang+Mai",
   "races": [
     {
       "name": "For Organizers",
       "url": "https://www.runlah.com/en/organizer",
-      "image": "https://www.runlah.com/images/event/quj9eQPO/bn_YIv-th.webp?size=md",
+      "image": "https://www.runlah.com/images/event/eyWx2HNb/bn_jnM.webp?size=md",
       "date": "2026-11-14",
       "dateDisplay": "14-15 November 2026",
       "location": "Running events in the  \"Chiang Mai\""
@@ -30,6 +30,14 @@
       "name": "Mae Takhrai Trail",
       "url": "https://www.runlah.com/en/uzrL7Eu1",
       "image": "https://www.runlah.com/images/event/uzrL7Eu1/bn_AVk.webp?size=md",
+      "date": "2026-12-11",
+      "dateDisplay": "11-13 December 2026",
+      "location": "Chiang Mai"
+    },
+    {
+      "name": "Mueangna 79 Chaodoi Coffee Run",
+      "url": "https://www.runlah.com/en/ZmpfT5ga",
+      "image": "https://www.runlah.com/images/event/ZmpfT5ga/bn_wAl.webp?size=md",
       "date": "2026-12-11",
       "dateDisplay": "11-13 December 2026",
       "location": "Chiang Mai"
